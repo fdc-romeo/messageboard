@@ -8,8 +8,8 @@
 
 					<?php echo $this->Flash->render('auth'); ?>
 				    <?php echo $this->Form->create('Users'); ?>
-				       <p id="param" style="color: red;text-align: center"><?php echo (isset($success) ? $success : '')?></p>
-				       <p id="param" style="color: red;text-align: center"><?php echo (isset($this->Session->read('Message')['flash'][0]['message']) ? $this->Session->read('Message')['flash'][0]['message'] : '')?></p>
+				       <p id="param" style="color: red;text-align: center;font-style: 15px"><b><?php echo (isset($success) ? $success : '')?></b></p>
+				       <p id="param" style="color: red;text-align: center;margin-top:-20px"><b><?php echo (isset($this->Session->read('Message')['flash'][0]['message']) ? $this->Session->read('Message')['flash'][0]['message'] : '')?></b></p>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter email">
 						<?php  echo (isset($this->validationErrors['User']['email']) ? $this->validationErrors['User']['name'][0] : '') ?>
@@ -25,13 +25,7 @@
 					</div>
 
 					<div class="text-right p-t-13 p-b-23">
-					<!-- 	<span class="txt1">
-							Forgot
-						</span>
 
-						<a href="#" class="txt2">
-							Username / Password?
-						</a> -->
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -45,8 +39,8 @@
 							<b>Don’t have an account?</b>
 						</span>
 
-						<a href="register" class="txt3" style="color:#343a40">
-							Register  now
+						<a href="register" class="txt3">
+							<b>Register  now</b>
 						</a>
 					</div>
 				</div>

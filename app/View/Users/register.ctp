@@ -1,7 +1,7 @@
 
 <div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100" style="height: 650px">
+			<div class="wrap-login100" style="height: 660px">
 				<div class="login100-form validate-form p-l-55 p-r-55 p-t-178">
 					<span class="login100-form-title" style="background-color: #343a40">
 						Registration
@@ -9,24 +9,24 @@
 					<?php echo $this->Form->create('Users')?>
 				 
 				
-  					    <p id="param" style="color: green;text-align: center"><?php echo (isset($success) ? $success : '')?></p>
+  					    <p id="param" style="color: green;text-align: center;font-style: 20px"><B><?php echo (isset($success) ? $success : '')?></B></p>
 					
 					 <p id="error_para" ></p>
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
 						<input class="input100" type="text" name="name" placeholder="Name" id="name"  required>
 						<span class="focus-input100"></span>
-						<p style="color:red"><?php  echo (isset($this->validationErrors['User']['name']) ? $this->validationErrors['User']['name'][0] : '') ?></p>
+						<p style="color:red;margin-left:48px"><?php  echo (isset($this->validationErrors['User']['name']) ? $this->validationErrors['User']['name'][0] : '') ?></p>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Please enter email" >
 						<input class="input100" type="email" name="email" placeholder="Email" required>
 						<span class="focus-input100"></span>
-						<p style="color:red"><?php  echo (isset($this->validationErrors['User']['email']) ? $this->validationErrors['User']['email'][0] : '') ?></p>
+						<p style="color:red;margin-left:48px"><?php  echo (isset($this->validationErrors['User']['email']) ? $this->validationErrors['User']['email'][0] : '') ?></p>
 					</div>
 	                 <div class="wrap-input100 validate-input" data-validate = "Please enter password" style="margin-top: 20px">
 						<input class="input100" type="password" name="password" placeholder="Password" id="pas"required>
 						<span class="focus-input100"></span>
-						<p style="color:red"><?php  echo (isset($this->validationErrors['User']['password']) ? $this->validationErrors['User']['password'][0] : '') ?></p>
+						<p style="color:red;margin-left:48px"><?php  echo (isset($this->validationErrors['User']['password']) ? $this->validationErrors['User']['password'][0] : '') ?></p>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Please enter password" style="margin-top: 20px">
 						<input class="input100" type="password" name="conpassword" placeholder="Confirm Password" id="conpas" onChange="checkPasswordMatch();">
@@ -53,7 +53,7 @@
 						</span>
 
 						<a href="login" class="txt3">
-							Login
+							<b>Login</b>
 						</a>
 					</div>
 				</div>

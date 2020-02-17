@@ -26,11 +26,7 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
             )
         ),
         'email' => array(
-      
-            'between' => array(
-                'rule' => array('lengthBetween', 5, 20),
-                'message' => 'Between 5 to 15 characters'
-            ),
+     
             'notBlank' => array(
                 'rule' => 'notBlank',
                 'required' => true,

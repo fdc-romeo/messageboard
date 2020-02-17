@@ -46,6 +46,7 @@ class UsersController extends AppController
 	           $this->Session->setFlash(__('Invalid username or password') );
             	return $this->redirect(array('action' => 'login'));
             }
+            //test
             // $this->Session->setFlash(__('Invalid username or password'));
                 
             // $error = 'Invalid username or password, try again';
